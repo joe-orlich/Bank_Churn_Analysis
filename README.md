@@ -18,21 +18,21 @@ For my project I sought to address Churn for a European Bank via consumer data p
 The effects of each aforemention feature on the baseline model is shown below.
 ![Log_analysis](https://i.imgur.com/XYPNoOB.png)
 
-2. Prediction Modeling - By creating new features and employing the much more complex Ensembled Tree Models (in this case XGBoost) I was able to generate and tune highly predictive model that could more accuarately predict customer churn.
+2. Prediction Modeling - By creating new features and employing the much more complex Ensembled Tree Models (in this case XGBoost) I was able to generate and tune a highly predictive model that could more accuarately predict customer churn.
 
-Once the model was generated I analyzed its performance at its prebuild .5 (balanced) threshold and found it was weighted towards Precision over recall. The cost benefit of a stronger Recall model outweighed Precision in this business case, so I reviewed its performance along the threshold range and chose an optimal value based on the retainment of Balance and Products being used by the churned cohort.
+Once the model was generated I analyzed its performance at its prebuild .5 (balanced) threshold and found it was weighted towards Precision over recall. The cost benefit of a stronger Recall model outweighed Precision in this business case, so I reviewed its performance along the threshold range and chose an optimal value based on the retainment of Balance and Products of the churned cohort.
 
 ![Threshold_analysis](https://i.imgur.com/7tPgV1l.png)
 
 ### Results
-*Age* - primary driver of churn for this dataset, indicating that as customers get older they are more likely to leave the business.
+*Age* - Primary driver of churn for this dataset, indicating that as customers get older they are more likely to leave the business.
 
-*German Balance restrictions* - there is no observations of a German account below 25k&euro; within the dataset. If account minimums are required for this subset of customers, that will artifically influence accounts closures compared to the rest of the customer base.
+*German Balance restrictions* - There is no observations of a German account below 25k&euro; within the dataset. If account minimums are required for this subset of customers, that will artifically influence accounts closures compared to the rest of the customer base.
 
 *Transaction Activity* - Accounts that have a record of transaction history are less likely to churn.
 
 ### Recommendations
-It is hard to define concretely without more Product information, but there appears to be a clear incongruence between the older customers and current bank offering. As such exploring products/serices that more attractive to mature investors such as retirement products, scaling decling account maintaince fees or attractive entrance programs for new customers i.e. their children.
+It is hard to define concretely without more Product information, but there appears to be a clear incongruence between the older customers and current bank offering. As such exploring products/serices that more attractive to mature investors such as retirement products, scaling decling fees or attractive entrance programs for new customers i.e. their children.
 
 If within the bounds of the EU, German and Banking legislation I suggest considering the removal of the minimum balance requirement for the German clients as it is not ownly driving churn but likely a barrier to entry as well.
 
