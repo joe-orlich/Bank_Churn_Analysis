@@ -1,6 +1,6 @@
 # Bank Churn Analysis
 
-![Imgur](https://i.imgur.com/nTEXr2F.jpg)
+![Imgur](https://i.imgur.com/Uvw8pVV.jpg)
 
 *Problem Statement:* Can data associated with bank clients be used to predict their churn? Can that data be anaylzed to determine which features or behaviors contribute to churn?
 
