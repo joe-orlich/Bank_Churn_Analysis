@@ -18,4 +18,8 @@ For my project I sought to address this for a company using a two pronged approa
 The effects of each aforemention feature on the baseline model is shown below.
 ![Log_analysis](https://i.imgur.com/XYPNoOB.png)
 
-2. Prediction Modeling - By employing the much more complex Ensembled Tree Models (in this case XGBoost) I was able to create a more 
+2. Prediction Modeling - By creating new features and employing the much more complex Ensembled Tree Models (in this case XGBoost) I was able to generate and tune highly predictive model that could more accuarately predict customer churn.
+
+Once the model was generated I analyzed its performance at its prebuild .5 (balanced) threshold and found it was weighted towards Precision over recall. The cost benefit of a stronger Recall model outweighed Precision in this business case, so I reviewed its performance along the threshold range and chose an optimal value based on the retainment of Balance and Products being used by the churned cohort.
+
+![Threshold_analysis](https://i.imgur.com/7tPgV1l.png)
